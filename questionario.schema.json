@@ -1,0 +1,946 @@
+{
+  "version": "ufv-mobilidade-3.0.0",
+  "title": "Pesquisa sobre deslocamentos até o campus da UFV – Viçosa",
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "title": "Li o Termo de Consentimento Livre e Esclarecido e aceito participar.",
+      "type": "radio",
+      "options": [
+        "Sim",
+        "Não"
+      ]
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "title": "Qual a sua idade, em anos completos?",
+      "type": "number",
+      "options": [],
+      "min": 0,
+      "step": 1,
+      "max": 120
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "title": "Qual o seu vínculo com a UFV?",
+      "type": "radio",
+      "options": [
+        "Estudante de graduação",
+        "Estudante de pós-graduação",
+        "Docente",
+        "Técnico-administrativo",
+        "Terceirizado ou funcionário de fundação"
+      ]
+    },
+    {
+      "id": "q3a",
+      "number": "3a",
+      "title": "Qual é o nível de escolaridade mais alto que você concluiu?",
+      "type": "radio",
+      "options": [
+        "Ensino fundamental incompleto",
+        "Ensino fundamental completo",
+        "Ensino médio completo",
+        "Graduação completa",
+        "Especialização completa",
+        "Mestrado completo",
+        "Doutorado completo",
+        "Prefiro não informar"
+      ]
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "title": "Qual o seu gênero?",
+      "type": "radio",
+      "options": [
+        "Feminino",
+        "Masculino",
+        "Outro",
+        "Prefiro não informar"
+      ]
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "title": "Qual é a renda mensal total das pessoas que compartilham suas despesas domésticas?",
+      "type": "radio",
+      "options": [
+        "Até 1 salário mínimo",
+        "Mais de 1 até 2 salários mínimos",
+        "Mais de 2 até 3 salários mínimos",
+        "Mais de 3 até 5 salários mínimos",
+        "Mais de 5 até 10 salários mínimos",
+        "Mais de 10 salários mínimos",
+        "Não sei",
+        "Prefiro não informar"
+      ],
+      "hint": "Considere o salário mínimo vigente. Em repúblicas, inclua somente quem compartilha seu orçamento; não some automaticamente a renda de todos os moradores."
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "title": "Quantas pessoas moram no seu domicílio, contando você?",
+      "type": "number",
+      "options": [],
+      "min": 1,
+      "step": 1
+    },
+    {
+      "id": "q7",
+      "number": 7,
+      "title": "Você leva ou busca filhos/dependentes na escola ou creche?",
+      "type": "radio",
+      "options": [
+        "Não",
+        "Às vezes",
+        "Todos os dias"
+      ]
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "title": "Você tem carteira de motorista (CNH)?",
+      "type": "radio",
+      "options": [
+        "Não",
+        "Sim, de carro",
+        "Sim, de moto",
+        "Sim, de carro e moto"
+      ]
+    },
+    {
+      "id": "q9",
+      "number": 9,
+      "title": "Quais destes você tem à disposição para usar no dia a dia? (marque todos)",
+      "type": "multi",
+      "options": [
+        "Carro",
+        "Moto",
+        "Bicicleta comum",
+        "Bicicleta elétrica",
+        "Nenhum"
+      ],
+      "exclusive": [
+        "Nenhum"
+      ]
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "title": "Como você descreve sua habilidade para conduzir uma bicicleta?",
+      "type": "radio",
+      "options": [
+        "Não sei pedalar",
+        "Estou aprendendo e preciso de ajuda",
+        "Pedalo sem ajuda, mas tenho dificuldade para frear, sinalizar ou fazer curvas",
+        "Pedalo sem ajuda e consigo frear, sinalizar e fazer curvas"
+      ],
+      "hint": "Pense na sua habilidade prática, independentemente da frequência com que pedala."
+    },
+    {
+      "id": "q10a",
+      "number": "10a",
+      "title": "Quanto você se sente confiante para pedalar no trânsito até o campus?",
+      "type": "radio",
+      "options": [
+        "Nada confiante",
+        "Pouco confiante",
+        "Moderadamente confiante",
+        "Muito confiante",
+        "Totalmente confiante",
+        "Não consigo avaliar"
+      ]
+    },
+    {
+      "id": "q10b",
+      "number": "10b",
+      "title": "Você já utilizou uma bicicleta elétrica com assistência ao pedalar?",
+      "type": "radio",
+      "options": [
+        "Nunca e não conheço seu funcionamento",
+        "Nunca, mas conheço seu funcionamento",
+        "Já experimentei",
+        "Utilizo de vez em quando",
+        "Utilizo com frequência"
+      ]
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "title": "De onde partiu sua última viagem até o campus?",
+      "type": "location",
+      "options": [],
+      "hint": "Considere a última ida presencial nos últimos 30 dias. Se não houve uma, indique isso na próxima pergunta. Não informe endereço completo ou número de imóvel."
+    },
+    {
+      "id": "q11a",
+      "number": "11a",
+      "title": "Quando ocorreu essa última ida presencial?",
+      "type": "radio",
+      "options": [
+        "Nos últimos 7 dias",
+        "Entre 8 e 30 dias atrás",
+        "Há mais de 30 dias",
+        "Ainda não fui presencialmente"
+      ]
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "title": "Quantos dias por semana você vem ao campus?",
+      "type": "radio",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6 ou 7"
+      ]
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "title": "A que horas você chegou ao campus nessa última ida?",
+      "type": "radio",
+      "options": [
+        "Antes das 7h",
+        "7h–7h59",
+        "8h–8h59",
+        "9h–10h59",
+        "11h–13h59",
+        "14h–17h59",
+        "18h–21h59",
+        "22h ou depois"
+      ]
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "title": "Qual acesso ou portão você usou para entrar no campus?",
+      "type": "text",
+      "options": [],
+      "other": false,
+      "hint": "Informe o nome ou uma referência conhecida. Evitamos numerações de portões ainda não confirmadas em campo."
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "title": "Qual foi o prédio ou local de destino nessa ida ao campus?",
+      "type": "text",
+      "options": []
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "title": "Qual foi o principal meio de transporte nessa última ida ao campus?",
+      "type": "radio",
+      "options": [
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta elétrica",
+        "Moto, dirigindo",
+        "Carro, dirigindo",
+        "Carona de carro ou moto",
+        "Mototáxi ou aplicativo",
+        "Ônibus",
+        "Outro"
+      ],
+      "other": true,
+      "hint": "Se combinou meios, escolha o utilizado na maior distância. Nas perguntas seguintes, considere essa mesma viagem."
+    },
+    {
+      "id": "q16a",
+      "number": "16a",
+      "title": "Além do meio principal, utilizou outro meio nessa ida?",
+      "type": "multi",
+      "options": [
+        "Caminhada de pelo menos 5 minutos",
+        "Bicicleta comum",
+        "Bicicleta elétrica",
+        "Ônibus",
+        "Carro ou moto",
+        "Não utilizei outro"
+      ],
+      "exclusive": [
+        "Não utilizei outro"
+      ]
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "title": "Quanto tempo levou, da saída da origem até chegar ao prédio de destino?",
+      "type": "number",
+      "options": [],
+      "min": 0,
+      "step": 1,
+      "unit": "minutos",
+      "hint": "Tempo total de uma ida, incluindo caminhada, espera, transferências e estacionamento.",
+      "max": 600
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "title": "Qual foi seu gasto pessoal nessa ida ao campus?",
+      "type": "number",
+      "options": [],
+      "min": 0,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "hint": "Considere passagens, combustível pago por você, aplicativo e estacionamento. Não inclua a volta, manutenção ou compra de veículo. Informe 0 se não houve gasto.",
+      "max": 1000
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "title": "Quais meios você realmente poderia utilizar para essa viagem?",
+      "type": "multi",
+      "options": [
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta elétrica",
+        "Moto",
+        "Carro",
+        "Carona",
+        "Ônibus",
+        "Nenhum outro além do principal"
+      ],
+      "exclusive": [
+        "Nenhum outro além do principal"
+      ],
+      "hint": "Considere acesso ao veículo, habilidade, habilitação, horário, custo e condições do percurso. Poder usar é diferente de preferir."
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "title": "Por que você usa esse meio de transporte? (marque até 2)",
+      "type": "multi",
+      "options": [
+        "É mais barato",
+        "É mais rápido",
+        "Saúde/exercício",
+        "Meio ambiente",
+        "Conforto",
+        "Segurança no trânsito",
+        "Segurança contra assalto",
+        "Gosto",
+        "Não tenho outra opção",
+        "Levo pessoas ou coisas"
+      ],
+      "limit": 2
+    },
+    {
+      "id": "q21",
+      "number": 21,
+      "title": "Se amanhã não pudesse usar esse meio, como viria ao campus?",
+      "type": "radio",
+      "options": [
+        "A pé",
+        "Bicicleta",
+        "Moto",
+        "Carro",
+        "Carona",
+        "Ônibus",
+        "Não viria"
+      ]
+    },
+    {
+      "id": "q22",
+      "number": 22,
+      "title": "Durante o dia, como costuma se deslocar dentro do campus (entre prédios, restaurante)?",
+      "type": "radio",
+      "options": [
+        "Não me desloco",
+        "A pé",
+        "Bicicleta",
+        "Carro ou moto",
+        "Ônibus"
+      ]
+    },
+    {
+      "id": "q22a",
+      "number": "22a",
+      "title": "Na volta desse dia, qual foi o principal meio de transporte?",
+      "type": "radio",
+      "options": [
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta elétrica",
+        "Moto, dirigindo",
+        "Carro, dirigindo",
+        "Carona de carro ou moto",
+        "Mototáxi ou aplicativo",
+        "Ônibus",
+        "Outro",
+        "Não fiz a volta no mesmo dia"
+      ],
+      "other": true
+    },
+    {
+      "id": "q22b",
+      "number": "22b",
+      "title": "Qual é a principal dificuldade para usar bicicleta entre sua origem e o campus?",
+      "type": "radio",
+      "options": [
+        "Não sei pedalar ou falta confiança",
+        "Não tenho acesso a uma bicicleta",
+        "Trânsito ou falta de continuidade da rota",
+        "Subidas ou esforço físico",
+        "Distância ou tempo de viagem",
+        "Chuva, calor ou falta de apoio no destino",
+        "Preciso transportar pessoas ou objetos",
+        "Receio de furto, roubo ou assédio",
+        "Prefiro outro meio",
+        "Não tenho dificuldade",
+        "Outra dificuldade"
+      ],
+      "hint": "Não é necessário informar doenças, diagnósticos ou outras informações de saúde."
+    },
+    {
+      "id": "q23",
+      "number": 23,
+      "title": "Nos últimos 3 meses, com que frequência você usou bicicleta para se deslocar (não só por lazer)?",
+      "type": "radio",
+      "options": [
+        "Nunca",
+        "Menos de 1 vez por mês",
+        "1 a 3 vezes por mês",
+        "1 a 2 dias por semana",
+        "3 ou mais dias por semana"
+      ]
+    },
+    {
+      "id": "q24",
+      "number": 24,
+      "title": "Nos últimos 12 meses, andando de bicicleta em Viçosa, aconteceu com você: (marque todos)",
+      "type": "multi",
+      "options": [
+        "Queda",
+        "Batida com veículo",
+        "Quase batida",
+        "Furto ou roubo da bicicleta",
+        "Nada disso",
+        "Não ando de bicicleta"
+      ],
+      "exclusive": [
+        "Nada disso",
+        "Não ando de bicicleta"
+      ]
+    },
+    {
+      "id": "q25",
+      "number": 25,
+      "title": "Como você avalia cada meio para o caminho até o campus? Use 1 para muito ruim e 5 para muito bom; se não souber, selecione a opção sem avaliação.",
+      "type": "matrix",
+      "options": [],
+      "modes": [
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta elétrica",
+        "Carro",
+        "Moto",
+        "Ônibus"
+      ],
+      "items": [
+        "Segurança no trânsito",
+        "Conforto (esforço, calor, chuva)",
+        "Chegar no horário"
+      ],
+      "ends": [
+        "Muito ruim",
+        "Muito bom"
+      ],
+      "hint": "Avalie apenas os meios que consegue julgar. Use “Não sei avaliar” quando necessário."
+    },
+    {
+      "id": "q26",
+      "number": 26,
+      "title": "Quanto você concorda com cada frase? (1 = discordo totalmente; 5 = concordo totalmente)",
+      "type": "scale",
+      "options": [],
+      "items": [
+        "Meu caminho até o campus tem subidas fortes.",
+        "Gosto de dirigir para me deslocar.",
+        "Gosto da ideia de me deslocar de bicicleta.",
+        "Preocupações com o meio ambiente influenciam como me desloco.",
+        "As subidas me impedem de vir de bicicleta comum.",
+        "Usar carro ou moto é um hábito meu.",
+        "Seria fácil para mim vir de bicicleta ao campus.",
+        "Os carros contribuem para a mudança do clima.",
+        "Chegar suado ao campus é um problema para mim.",
+        "Ter carro é sinal de liberdade.",
+        "Pedalar é uma boa forma de fazer exercício no dia a dia.",
+        "Sinto que devo usar meios de transporte menos poluentes."
+      ],
+      "ends": [
+        "Discordo totalmente",
+        "Concordo totalmente"
+      ]
+    },
+    {
+      "id": "q27",
+      "number": 27,
+      "title": "Quanto cada item ajudaria você a vir (ou vir mais) de bicicleta ao campus? (1 = nada; 5 = muito)",
+      "type": "scale",
+      "options": [],
+      "items": [
+        "Ciclovia separada dos carros",
+        "Caminho contínuo, sem interrupções, até o campus",
+        "Caminho com menos subidas, mesmo que mais longo",
+        "Cruzamentos e travessias seguros",
+        "Bicicletário coberto e seguro no campus",
+        "Vestiário ou chuveiro no destino",
+        "Iluminação e segurança contra assaltos no caminho",
+        "Ter bicicleta elétrica (própria ou compartilhada)"
+      ],
+      "ends": [
+        "Nada",
+        "Muito"
+      ]
+    },
+    {
+      "id": "q28",
+      "number": 28,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Na rua, junto com os carros",
+      "time": "10 min",
+      "slope": "Plano",
+      "bike": "Própria (ou emprestada) – grátis",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q29",
+      "number": 29,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Na rua, junto com os carros",
+      "time": "15 min",
+      "slope": "Subidas moderadas",
+      "bike": "Compartilhada comum – R$ 1,00",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q30",
+      "number": 30,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Na rua, junto com os carros",
+      "time": "20 min",
+      "slope": "Subidas fortes",
+      "bike": "Compartilhada elétrica – R$ 2,00",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q31",
+      "number": 31,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Ciclofaixa pintada",
+      "time": "10 min",
+      "slope": "Subidas moderadas",
+      "bike": "Compartilhada elétrica – R$ 2,00",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q32",
+      "number": 32,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Ciclofaixa pintada",
+      "time": "15 min",
+      "slope": "Subidas fortes",
+      "bike": "Própria (ou emprestada) – grátis",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q33",
+      "number": 33,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Ciclofaixa pintada",
+      "time": "20 min",
+      "slope": "Plano",
+      "bike": "Compartilhada comum – R$ 1,00",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q34",
+      "number": 34,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Ciclovia separada por meio-fio",
+      "time": "10 min",
+      "slope": "Subidas fortes",
+      "bike": "Compartilhada comum – R$ 1,00",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q35",
+      "number": 35,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Ciclovia separada por meio-fio",
+      "time": "15 min",
+      "slope": "Plano",
+      "bike": "Compartilhada elétrica – R$ 2,00",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q36",
+      "number": 36,
+      "type": "scenario",
+      "title": "Como você viria ao campus nesta situação?",
+      "road": "Ciclovia separada por meio-fio",
+      "time": "20 min",
+      "slope": "Subidas moderadas",
+      "bike": "Própria (ou emprestada) – grátis",
+      "options": [
+        "Bicicleta nas condições apresentadas",
+        "Manteria meu deslocamento habitual"
+      ],
+      "hint": "Os atributos descrevem um pacote. O custo se refere a uma ida. A manutenção do deslocamento habitual inclui as condições já relatadas."
+    },
+    {
+      "id": "q37",
+      "number": 37,
+      "title": "Você considera passar a usar bicicleta nas suas idas ao campus?",
+      "type": "radio",
+      "options": [
+        "Já estou experimentando essa mudança",
+        "Pretendo experimentar nos próximos 6 meses",
+        "Gostaria, mas hoje não consigo",
+        "Não considero essa mudança"
+      ]
+    },
+    {
+      "id": "q38",
+      "number": 38,
+      "title": "Com uma rota segura e contínua para bicicletas até o campus, quantos dias por semana você viria de bicicleta?",
+      "type": "radio",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5 ou mais"
+      ],
+      "hint": "É uma intenção hipotética, não um compromisso. Considere a sua frequência de presença no campus."
+    },
+    {
+      "id": "q39",
+      "number": 39,
+      "title": "E se nessa rota houvesse bicicleta elétrica compartilhada a R$ 2,00 por viagem?",
+      "type": "radio",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5 ou mais"
+      ],
+      "hint": "Considere R$ 2 por ida, ou R$ 4 para ida e volta. É uma intenção hipotética, não um compromisso."
+    },
+    {
+      "id": "q40",
+      "number": 40,
+      "title": "(Opcional) O que mais dificulta você vir de bicicleta ao campus hoje?",
+      "type": "textarea",
+      "options": []
+    },
+    {
+      "id": "q41",
+      "number": "41",
+      "type": "number",
+      "title": "Nos últimos 7 dias, em quantos dias você foi de bicicleta ao campus?",
+      "min": 0,
+      "max": 7,
+      "step": 1,
+      "unit": "dias",
+      "hint": "Inclua bicicleta comum ou elétrica. Informe 0 se não foi de bicicleta."
+    },
+    {
+      "id": "q42",
+      "number": "42",
+      "type": "radio",
+      "title": "Qual é a chance de você usar bicicleta em pelo menos uma ida ao campus nos próximos 30 dias?",
+      "options": [
+        "Muito baixa",
+        "Baixa",
+        "Moderada",
+        "Alta",
+        "Muito alta",
+        "Não consigo avaliar"
+      ],
+      "hint": "Considere suas condições atuais, sem supor obras ou serviços novos. Se já pedala, considere continuar usando."
+    },
+    {
+      "id": "q43",
+      "number": "43",
+      "type": "scale",
+      "title": "Pense nas condições atuais do caminho entre sua origem e o campus.",
+      "items": [
+        "Há espaço para pedalar separado do tráfego motorizado ao longo do caminho.",
+        "O espaço disponível para pedalar é contínuo até o campus.",
+        "Os cruzamentos possuem condições adequadas para a travessia de bicicletas."
+      ],
+      "ends": [
+        "Discordo totalmente",
+        "Concordo totalmente"
+      ],
+      "hint": "Avalie a situação existente, não uma melhoria desejada. Se não conhecer, use a opção sem avaliação."
+    },
+    {
+      "id": "q44",
+      "number": "44",
+      "type": "scale",
+      "title": "Como você percebe a segurança para pedalar nesse caminho atualmente?",
+      "items": [
+        "Eu me sentiria seguro(a) em relação ao tráfego de veículos nesse caminho.",
+        "Eu me sentiria seguro(a) para atravessar os cruzamentos desse caminho de bicicleta.",
+        "Eu me sentiria seguro(a) para dividir trechos desse caminho com veículos quando necessário."
+      ],
+      "ends": [
+        "Discordo totalmente",
+        "Concordo totalmente"
+      ],
+      "hint": "Considere o percurso atual. Segurança percebida e habilidade prática são aspectos diferentes."
+    },
+    {
+      "id": "q45",
+      "number": "45",
+      "type": "radio",
+      "title": "Como você recebeu o convite para esta pesquisa?",
+      "options": [
+        "E-mail institucional",
+        "Canal de turma ou setor",
+        "Rede social",
+        "Convite presencial",
+        "Indicação de outra pessoa",
+        "Outro canal",
+        "Prefiro não informar"
+      ]
+    },
+    {
+      "id": "q46",
+      "number": "46",
+      "type": "radio",
+      "title": "Você aceitaria responder a uma etapa futura sobre seus deslocamentos, usando seu código de participação?",
+      "options": [
+        "Sim, tenho interesse",
+        "Não",
+        "Ainda não sei"
+      ],
+      "hint": "Esta resposta não cadastra contato nem autoriza uma nova coleta. Uma etapa futura terá convite e consentimento próprios; guarde seu código se desejar."
+    },
+    {
+      "id": "q50",
+      "number": "50",
+      "type": "number",
+      "title": "Se fosse de a pé, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "A pé",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q51",
+      "number": "51",
+      "type": "number",
+      "title": "Se fosse de a pé, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "A pé",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q52",
+      "number": "52",
+      "type": "number",
+      "title": "Se fosse de bicicleta comum, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "Bicicleta comum",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q53",
+      "number": "53",
+      "type": "number",
+      "title": "Se fosse de bicicleta comum, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "Bicicleta comum",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q54",
+      "number": "54",
+      "type": "number",
+      "title": "Se fosse de bicicleta elétrica, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "Bicicleta elétrica",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q55",
+      "number": "55",
+      "type": "number",
+      "title": "Se fosse de bicicleta elétrica, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "Bicicleta elétrica",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q56",
+      "number": "56",
+      "type": "number",
+      "title": "Se fosse de moto, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "Moto",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q57",
+      "number": "57",
+      "type": "number",
+      "title": "Se fosse de moto, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "Moto",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q58",
+      "number": "58",
+      "type": "number",
+      "title": "Se fosse de carro, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "Carro",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q59",
+      "number": "59",
+      "type": "number",
+      "title": "Se fosse de carro, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "Carro",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q60",
+      "number": "60",
+      "type": "number",
+      "title": "Se fosse de carona, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "Carona",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q61",
+      "number": "61",
+      "type": "number",
+      "title": "Se fosse de carona, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "Carona",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q62",
+      "number": "62",
+      "type": "number",
+      "title": "Se fosse de ônibus, qual seria o tempo total estimado dessa ida?",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "unit": "minutos",
+      "alternative": "Ônibus",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    },
+    {
+      "id": "q63",
+      "number": "63",
+      "type": "number",
+      "title": "Se fosse de ônibus, qual seria o gasto pessoal estimado dessa ida?",
+      "min": 0,
+      "max": 1000,
+      "step": 0.01,
+      "unit": "reais por ida",
+      "alternative": "Ônibus",
+      "hint": "Considere o mesmo ponto de partida e destino. Inclua espera e acesso no tempo. Se não souber estimar, deixe sem resposta. Zero é um valor válido."
+    }
+  ],
+  "design_version": "nove-pacotes-v2",
+  "scale_missing": "NA",
+  "sources_file": "notas-metodologicas.md"
+}

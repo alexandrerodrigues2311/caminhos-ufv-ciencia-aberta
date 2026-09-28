@@ -1,0 +1,105 @@
+{
+  "updated": "2026-09-28",
+  "source": "OpenStreetMap via Overpass",
+  "license": "ODbL 1.0",
+  "places": [
+    {
+      "id": "2959454694",
+      "name": "Quatro Pilastras",
+      "lat": -20.7574631,
+      "lng": -42.8751017,
+      "source": "https://www.openstreetmap.org/node/2959454694"
+    },
+    {
+      "id": "8213653084",
+      "name": "Departamento de Engenharia de Produção e Mecânica",
+      "lat": -20.7609128,
+      "lng": -42.8653736,
+      "source": "https://www.openstreetmap.org/node/8213653084"
+    },
+    {
+      "id": "8213689317",
+      "name": "Departamento de Tecnologia de Alimentos",
+      "lat": -20.7608201,
+      "lng": -42.8630191,
+      "source": "https://www.openstreetmap.org/node/8213689317"
+    },
+    {
+      "id": "8213896504",
+      "name": "Departamento de Medicina e Enfermagem",
+      "lat": -20.7621742,
+      "lng": -42.8604454,
+      "source": "https://www.openstreetmap.org/node/8213896504"
+    },
+    {
+      "id": "8214842516",
+      "name": "Departamento de Engenharia Agrícola",
+      "lat": -20.7707267,
+      "lng": -42.8722115,
+      "source": "https://www.openstreetmap.org/node/8214842516"
+    },
+    {
+      "id": "8222713258",
+      "name": "Pavilhão de Aulas I",
+      "lat": -20.7606768,
+      "lng": -42.8674828,
+      "source": "https://www.openstreetmap.org/node/8222713258"
+    },
+    {
+      "id": "148819551",
+      "name": "Edifício Arthur Bernardes",
+      "lat": -20.762117,
+      "lng": -42.8694577,
+      "source": "https://www.openstreetmap.org/way/148819551"
+    },
+    {
+      "id": "149507970",
+      "name": "Centro de Ciências Exatas",
+      "lat": -20.7645808,
+      "lng": -42.8683156,
+      "source": "https://www.openstreetmap.org/way/149507970"
+    },
+    {
+      "id": "292666797",
+      "name": "Restaurante Universitário I",
+      "lat": -20.7606049,
+      "lng": -42.8683706,
+      "source": "https://www.openstreetmap.org/way/292666797"
+    },
+    {
+      "id": "292666798",
+      "name": "Biblioteca Central",
+      "lat": -20.7612857,
+      "lng": -42.8677388,
+      "source": "https://www.openstreetmap.org/way/292666798"
+    },
+    {
+      "id": "292881327",
+      "name": "Restaurante Universitário II",
+      "lat": -20.7675316,
+      "lng": -42.861023,
+      "source": "https://www.openstreetmap.org/way/292881327"
+    },
+    {
+      "id": "306848872",
+      "name": "Laboratorio de Engenharia Civil",
+      "lat": -20.7648445,
+      "lng": -42.8692282,
+      "source": "https://www.openstreetmap.org/way/306848872"
+    },
+    {
+      "id": "309610614",
+      "name": "Departamento de Arquitetura e Urbanismo",
+      "lat": -20.7645242,
+      "lng": -42.8706174,
+      "source": "https://www.openstreetmap.org/way/309610614"
+    },
+    {
+      "id": "21450486",
+      "name": "Pavilhão de Aulas B",
+      "lat": -20.7637819,
+      "lng": -42.8664292,
+      "source": "https://www.openstreetmap.org/relation/21450486"
+    }
+  ]
+}
