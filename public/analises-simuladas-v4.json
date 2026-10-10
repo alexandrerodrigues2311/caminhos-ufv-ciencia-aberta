@@ -1,0 +1,212 @@
+{
+  "ml": {
+    "method": "ml",
+    "version": "ufv-mobilidade-4.2.0",
+    "kind": "synthetic",
+    "seed": 8421264,
+    "result": {
+      "target": "qChange: Sim versus Não; disposição autorrelatada, não mudança observada",
+      "n": 384,
+      "excluded": 16,
+      "class_counts": {
+        "1": 281,
+        "0": 103
+      },
+      "models": [
+        {
+          "model": "Referência de prevalência",
+          "n": 384,
+          "balanced_accuracy": 0.5,
+          "auc": 0.49276163493763603,
+          "brier": 0.19630013132451682,
+          "log_loss": 0.5815349943328362,
+          "fold_balanced_accuracy": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "model": "Regressão logística",
+          "n": 384,
+          "balanced_accuracy": 0.4882009466883184,
+          "auc": 0.5165670455723318,
+          "brier": 0.21460092630552677,
+          "log_loss": 0.6318841622778355,
+          "fold_balanced_accuracy": [
+            0.4635964912280702,
+            0.45535714285714285,
+            0.48809523809523814,
+            0.5386904761904762,
+            0.49642857142857144
+          ]
+        },
+        {
+          "model": "Random forest",
+          "n": 384,
+          "balanced_accuracy": 0.5,
+          "auc": 0.48795909200843035,
+          "brier": 0.1992927073615355,
+          "log_loss": 0.5886363959729363,
+          "fold_balanced_accuracy": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "interpretation": "Compare cada modelo com a referência de prevalência. Desempenho em validação interna não demonstra transportabilidade, causalidade ou utilidade operacional. Hiperparâmetros fixados; sem busca no conjunto de teste. qChance, qBarriers e cenários não entram nos preditores para evitar dependência do desfecho."
+    },
+    "fingerprint": "8cdad2d32f1d535f7e2ef9f5e85167506282442530fdb74d8a071f12905afa33",
+    "warning": "DADOS FICTÍCIOS: resultados exclusivos para demonstração."
+  },
+  "scenarios": {
+    "method": "scenarios",
+    "version": "ufv-mobilidade-4.2.0",
+    "kind": "synthetic",
+    "seed": 8421264,
+    "result": {
+      "participants": 379,
+      "observations": 2145,
+      "terms": [
+        {
+          "term": "Intercept",
+          "log_odds": 0.5399081377253072,
+          "odds_ratio": 1.7158492331313022,
+          "ci_low": 1.3855558368957175,
+          "ci_high": 2.124879064732247,
+          "p": 7.446879711589119e-07
+        },
+        {
+          "term": "C(scenario)[T.2]",
+          "log_odds": 0.06407463457886158,
+          "odds_ratio": 1.0661719690880263,
+          "ci_low": 0.7938186136894505,
+          "ci_high": 1.4319677670266073,
+          "p": 0.6702939722383494
+        },
+        {
+          "term": "C(scenario)[T.3]",
+          "log_odds": -0.06439031597262816,
+          "odds_ratio": 0.9376389526386291,
+          "ci_low": 0.707376890203218,
+          "ci_high": 1.2428548595257258,
+          "p": 0.6542666720702373
+        },
+        {
+          "term": "C(scenario)[T.4]",
+          "log_odds": -0.013730269060294583,
+          "odds_ratio": 0.9863635611549975,
+          "ci_low": 0.7336772040732469,
+          "ci_high": 1.326077830104201,
+          "p": 0.9275493748945228
+        },
+        {
+          "term": "C(scenario)[T.5]",
+          "log_odds": 0.17960056602108118,
+          "odds_ratio": 1.1967392493206335,
+          "ci_low": 0.8916613890922579,
+          "ci_high": 1.6061981020873037,
+          "p": 0.23161110580408528
+        },
+        {
+          "term": "C(scenario)[T.6]",
+          "log_odds": 0.20489928673100025,
+          "odds_ratio": 1.2274014431263902,
+          "ci_low": 0.9020764830293451,
+          "ci_high": 1.670051631907732,
+          "p": 0.1922097042297345
+        }
+      ],
+      "by_scenario": [
+        {
+          "scenario": "1",
+          "count": 361,
+          "sum": 228
+        },
+        {
+          "scenario": "2",
+          "count": 352,
+          "sum": 227
+        },
+        {
+          "scenario": "3",
+          "count": 369,
+          "sum": 228
+        },
+        {
+          "scenario": "4",
+          "count": 358,
+          "sum": 225
+        },
+        {
+          "scenario": "5",
+          "count": 357,
+          "sum": 240
+        },
+        {
+          "scenario": "6",
+          "count": 348,
+          "sum": 236
+        }
+      ],
+      "interpretation": "Contrastes associativos entre situações, em relação à situação 1, com correlação das respostas da mesma pessoa e variância robusta. A escolha foi reduzida a mudança versus manutenção; a distribuição original por alternativa deve acompanhar o resultado. Não são efeitos causais nem elasticidades."
+    },
+    "fingerprint": "8cdad2d32f1d535f7e2ef9f5e85167506282442530fdb74d8a071f12905afa33",
+    "warning": "DADOS FICTÍCIOS: resultados exclusivos para demonstração."
+  },
+  "moderation": {
+    "method": "moderation",
+    "version": "ufv-mobilidade-4.2.0",
+    "kind": "synthetic",
+    "seed": 8421264,
+    "result": {
+      "n": 335,
+      "excluded": 65,
+      "terms": [
+        {
+          "term": "Intercept",
+          "odds_ratio": 3.6158331348734816,
+          "ci_low": 1.9420773257945392,
+          "ci_high": 6.732095105379016,
+          "p": 5.056984659553487e-05
+        },
+        {
+          "term": "knows_cycle",
+          "odds_ratio": 0.6153110675385068,
+          "ci_low": 0.30974204786282483,
+          "ci_high": 1.2223323002082382,
+          "p": 0.16553427231436757
+        },
+        {
+          "term": "active_mode",
+          "odds_ratio": 0.8046306804525561,
+          "ci_low": 0.30861855660743315,
+          "ci_high": 2.097834099940671,
+          "p": 0.6566156533932063
+        },
+        {
+          "term": "knows_cycle:active_mode",
+          "odds_ratio": 1.3848139684711531,
+          "ci_low": 0.44948654108448527,
+          "ci_high": 4.266445270298699,
+          "p": 0.5706536465702237
+        },
+        {
+          "term": "age10",
+          "odds_ratio": 1.0234435205933439,
+          "ci_low": 0.8636682532431056,
+          "ci_high": 1.2127765909089927,
+          "p": 0.789026081474766
+        }
+      ],
+      "interpretation": "Interação exploratória na escala logit entre saber pedalar (q10) e modo ativo atual, ajustada apenas por idade. q10 combina habilidade e frequência; não mede uma competência latente validada. A interação não prova moderação causal. Confundimento por vínculo e renda ainda precisa ser avaliado no plano final."
+    },
+    "fingerprint": "8cdad2d32f1d535f7e2ef9f5e85167506282442530fdb74d8a071f12905afa33",
+    "warning": "DADOS FICTÍCIOS: resultados exclusivos para demonstração."
+  }
+}

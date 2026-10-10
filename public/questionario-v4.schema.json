@@ -1,0 +1,446 @@
+{
+  "version": "ufv-mobilidade-4.2.0",
+  "design_version": "rotina-mapa-oficial-revisao-2026-10-10",
+  "title": "Pesquisa sobre deslocamentos até o campus da UFV – Viçosa",
+  "source": "Questionario_UFV_sugestoes.docx",
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "title": "Li o Termo de Consentimento Livre e Esclarecido e aceito participar.",
+      "type": "radio",
+      "options": [
+        "Sim",
+        "Não"
+      ]
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "title": "Qual a sua idade, em anos completos?",
+      "type": "number",
+      "options": [],
+      "min": 0,
+      "step": 1,
+      "max": 120
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "title": "Qual o seu vínculo com a UFV?",
+      "type": "radio",
+      "options": [
+        "Estudante de graduação",
+        "Estudante de pós-graduação",
+        "Docente",
+        "Técnico-administrativo",
+        "Terceirizado ou funcionário de fundação"
+      ]
+    },
+    {
+      "id": "q3a",
+      "number": "3a",
+      "title": "Qual é o nível de escolaridade mais alto que você concluiu?",
+      "type": "radio",
+      "options": [
+        "Ensino médio",
+        "Graduação",
+        "Especialização",
+        "Mestrado",
+        "Doutorado"
+      ]
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "title": "Qual o seu gênero?",
+      "type": "radio",
+      "options": [
+        "Feminino",
+        "Masculino",
+        "Outro",
+        "Prefiro não informar"
+      ]
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "title": "Qual é a renda mensal total das pessoas que compartilham suas despesas?",
+      "type": "radio",
+      "options": [
+        "Até 1 SM (até R$ 1.621)",
+        "De 1 a 3 SM (R$ 1.621,01 a R$ 4.863)",
+        "De 3 a 5 SM (R$ 4.863,01 a R$ 8.105)",
+        "De 5 a 10 SM (R$ 8.105,01 a R$ 16.210)",
+        "Acima de 10 SM (acima de R$ 16.210)",
+        "Prefiro não informar"
+      ],
+      "hint": "Em repúblicas, inclua somente quem compartilha seu orçamento; não some automaticamente a renda de todos os moradores. Valores conforme o questionário revisado."
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "title": "Quantas pessoas moram no seu domicílio, contando você?",
+      "type": "number",
+      "options": [],
+      "min": 1,
+      "step": 1
+    },
+    {
+      "id": "qHousing",
+      "number": "Housing",
+      "title": "Onde você mora durante o período letivo?",
+      "type": "radio",
+      "options": [
+        "República ou casa dividida com estudantes",
+        "Sozinho(a)",
+        "Com família",
+        "Pensionato ou quarto alugado",
+        "Alojamento da UFV"
+      ]
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "title": "Você tem carteira de motorista (CNH)?",
+      "type": "radio",
+      "options": [
+        "Não",
+        "Sim, de carro",
+        "Sim, de moto",
+        "Sim, de carro e moto"
+      ]
+    },
+    {
+      "id": "q9",
+      "number": "9",
+      "title": "Quais destes você tem à disposição para usar no dia a dia?",
+      "type": "multi",
+      "options": [
+        "Carro",
+        "Moto",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico",
+        "Nenhum"
+      ],
+      "exclusive": [
+        "Nenhum"
+      ]
+    },
+    {
+      "id": "q10",
+      "number": "10",
+      "title": "Você sabe andar de bicicleta?",
+      "type": "radio",
+      "options": [
+        "Sim, e ando com alguma frequência",
+        "Sim, mas raramente ou nunca ando",
+        "Não sei andar de bicicleta"
+      ]
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "title": "De onde você costuma sair para ir ao campus?",
+      "type": "location",
+      "options": [],
+      "hint": "Marque a esquina ou quadra mais próxima. Não informe número de imóvel. Se preferir, responda pelos campos de texto."
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "title": "Quantos dias por semana você vem ao campus?",
+      "type": "radio",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6 ou 7"
+      ]
+    },
+    {
+      "id": "q13",
+      "number": "13",
+      "title": "A que horas você costuma chegar ao campus?",
+      "type": "radio",
+      "options": [
+        "Antes das 7h",
+        "Entre 7h e 8h59",
+        "Entre 9h e 12h59",
+        "Entre 13h e 17h59",
+        "A partir das 18h"
+      ],
+      "hint": "Considere a maioria dos dias. Se vai mais de uma vez no mesmo dia, marque a primeira chegada."
+    },
+    {
+      "id": "qDeparture",
+      "number": "Departure",
+      "title": "A que horas você costuma sair do campus?",
+      "type": "radio",
+      "options": [
+        "Antes das 12h",
+        "Entre 12h e 17h59",
+        "Entre 18h e 19h59",
+        "Entre 20h e 21h59",
+        "A partir das 22h"
+      ],
+      "hint": "Considere a maioria dos dias. Se sai mais de uma vez no mesmo dia, marque a última saída."
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "title": "Em qual prédio ou local do campus você chega primeiro?",
+      "type": "text",
+      "options": [],
+      "hint": "Você pode buscar o nome do local ou marcar no mapa oficial. Não precisa saber o número do prédio."
+    },
+    {
+      "id": "q16",
+      "number": "16",
+      "title": "Qual meio de transporte você usa para ir ao campus?",
+      "type": "radio",
+      "options": [
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico",
+        "Moto",
+        "Carro",
+        "Ônibus",
+        "Carona",
+        "Carro de aplicativo ou táxi"
+      ],
+      "hint": "Se usar mais de um meio, marque o do trecho mais longo."
+    },
+    {
+      "id": "q20",
+      "number": "20",
+      "title": "De modo geral, o que você mais considera ao escolher como ir ao campus?",
+      "type": "multi",
+      "options": [
+        "Rapidez e pontualidade (tempo de viagem, chegar no horário)",
+        "Custo",
+        "Segurança",
+        "Conforto e esforço (não suar, não se molhar, evitar subidas)",
+        "Saúde e meio ambiente (fazer exercício, poluir menos)"
+      ],
+      "limit": 2
+    },
+    {
+      "id": "q22",
+      "number": "22",
+      "title": "Como costuma se deslocar dentro do campus (entre prédios, restaurante)?",
+      "type": "radio",
+      "options": [
+        "A pé",
+        "Bicicleta",
+        "Bicicleta ou patinete elétrico",
+        "Moto",
+        "Carro",
+        "Ônibus",
+        "Não me desloco"
+      ]
+    },
+    {
+      "id": "q22a",
+      "number": "22a",
+      "title": "Qual meio de transporte você usa para ir embora do campus?",
+      "type": "radio",
+      "options": [
+        "Pelo mesmo meio de transporte da ida",
+        "Por outro meio de transporte"
+      ]
+    },
+    {
+      "id": "qReturnMode",
+      "number": "ReturnMode",
+      "title": "Qual meio de transporte você usa na volta?",
+      "type": "radio",
+      "options": [
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico",
+        "Moto",
+        "Carro",
+        "Ônibus",
+        "Carona",
+        "Carro de aplicativo ou táxi"
+      ],
+      "hint": "Se usar mais de um meio, marque o do trecho mais longo.",
+      "when": {
+        "id": "q22a",
+        "value": "Por outro meio de transporte"
+      }
+    },
+    {
+      "id": "qReturnReason",
+      "number": "ReturnReason",
+      "title": "Por que você volta por um meio diferente do da ida?",
+      "type": "multi",
+      "options": [
+        "O relevo é diferente nos dois sentidos (um deles tem mais subida)",
+        "O horário de ida e o de volta são diferentes (pressa para chegar, volta à noite, cansaço no fim do dia)",
+        "O ônibus (horário ou frequência) atende só um dos sentidos",
+        "Tenho carona ou veículo disponível só na ida ou só na volta",
+        "Faço outra parada em um dos trajetos (trabalho, compras, buscar alguém etc.)",
+        "Outro"
+      ],
+      "limit": 2,
+      "other": true,
+      "when": {
+        "id": "q22a",
+        "value": "Por outro meio de transporte"
+      }
+    },
+    {
+      "id": "qChange",
+      "number": "Change",
+      "title": "Você estaria disposto(a) a trocar seu meio atual por um destes para ir e voltar do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Não, continuaria com meu meio atual",
+        "Sim, passaria a ir a pé",
+        "Sim, passaria a usar bicicleta comum própria",
+        "Sim, passaria a usar bicicleta ou patinete elétrico próprio"
+      ],
+      "hint": "Considere uma mudança em relação ao meio que você usa hoje. Se já utiliza uma dessas opções, você pode escolher outra; se pretende manter seu meio atual, marque “Não”."
+    },
+    {
+      "id": "qChance",
+      "number": "Chance",
+      "title": "Qual a chance de você realmente fazer essa mudança nos próximos 6 meses?",
+      "type": "radio",
+      "options": [
+        "Nenhuma",
+        "Pequena",
+        "Média",
+        "Grande",
+        "Já estou fazendo"
+      ],
+      "when": {
+        "id": "qChange",
+        "prefix": "Sim,"
+      }
+    },
+    {
+      "id": "qBarriers",
+      "number": "Barriers",
+      "title": "O que mais impede você de fazer essa mudança?",
+      "type": "multi",
+      "options": [
+        "Subidas no caminho (ladeiras, relevo)",
+        "Esforço e clima (distância, condição física, calor, suor, chuva)",
+        "Segurança (trânsito e pessoal)",
+        "Rotina (levar material ou outra pessoa, horários e compromissos)",
+        "Custo de comprar e manter uma bicicleta"
+      ],
+      "when": {
+        "id": "qChange",
+        "value": "Não, continuaria com meu meio atual"
+      },
+      "hint": "Marque os impedimentos que se aplicam a você. Se não houver, pode deixar sem resposta."
+    },
+    {
+      "id": "qSituation1",
+      "number": "Situation1",
+      "title": "Nessa situação, como você iria e voltaria do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Continuaria com meu meio atual",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "situation": "Ciclovia ou ciclofaixa contínua em toda a sua rota até o campus"
+    },
+    {
+      "id": "qSituation2",
+      "number": "Situation2",
+      "title": "Nessa situação, como você iria e voltaria do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Continuaria com meu meio atual",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "situation": "Calçadas largas, contínuas e sem obstáculos em toda a sua rota até o campus"
+    },
+    {
+      "id": "qSituation3",
+      "number": "Situation3",
+      "title": "Nessa situação, como você iria e voltaria do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Continuaria com meu meio atual",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "situation": "Infraestrutura no prédio de destino (bicicletário seguro com recarga e vestiário)"
+    },
+    {
+      "id": "qSituation4",
+      "number": "Situation4",
+      "title": "Nessa situação, como você iria e voltaria do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Continuaria com meu meio atual",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "situation": "Bicicletas comuns e elétricas compartilhadas pela UFV, com estações no campus e nos bairros, para pegar num lugar e deixar no outro, com aluguel subsidiado"
+    },
+    {
+      "id": "qSituation5",
+      "number": "Situation5",
+      "title": "Nessa situação, como você iria e voltaria do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Continuaria com meu meio atual",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "situation": "O estacionamento no campus passa a ser cobrado"
+    },
+    {
+      "id": "qSituation6",
+      "number": "Situation6",
+      "title": "Nessa situação, como você iria e voltaria do campus na maioria dos dias?",
+      "type": "radio",
+      "options": [
+        "Continuaria com meu meio atual",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "situation": "A passagem de ônibus ou o preço do combustível sofre um aumento"
+    },
+    {
+      "id": "qEvaluation",
+      "number": "4",
+      "title": "Pensando no seu caminho entre a casa e o campus, como você avalia cada meio de transporte?",
+      "type": "matrix",
+      "options": [],
+      "modes": [
+        "Meio atual da ida",
+        "A pé",
+        "Bicicleta comum",
+        "Bicicleta ou patinete elétrico"
+      ],
+      "items": [
+        "Segurança (risco de acidente, assalto ou furto)",
+        "Conforto (pouco esforço, pouco calor e suor, protegido da chuva)",
+        "Praticidade (chegar no horário, sair quando quiser, carregar material)"
+      ],
+      "ends": [
+        "Muito ruim",
+        "Muito bom"
+      ],
+      "hint": "Dê uma nota de 1 a 5. Se não souber, marque “Não sei avaliar”. Sua opinião importa mesmo para os meios que você não usa."
+    }
+  ]
+}
